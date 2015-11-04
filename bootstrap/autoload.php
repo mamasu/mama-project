@@ -14,7 +14,7 @@ define('MMF_START', microtime(true));
 |
 */
 
-require __DIR__.'/../vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 try {
     set_error_handler(function($errno, $errstr, $errfile, $errline) {
@@ -53,10 +53,9 @@ try {
     $errorText = $frontController->messageErrors;
 
 } catch (\Exception $e) {
-    var_dump($e);
     //Set error var to one
     $error = 1;
     $errorText = $e->getTraceAsString();
     //Include the error default page in case of general errors.
-    include (__DIR__ . '/../app/views/errors/error_page.html');
+    include (__DIR__ . '/app/views/errors/error_page.html');
 }
