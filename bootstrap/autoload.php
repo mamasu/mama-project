@@ -41,7 +41,7 @@ try {
     $communication   = new Mmf\IO\CommunicationHttp();
 
     //Create the new FrontController and pass the autoloader
-    $frontController = new Mmf\MVC\FrontController($autoloader, $config, $communication);
+    $frontController = new Mmf\Controller\FrontController($autoloader, $config, $communication);
 
     $config->addConfigVars(dirname(__FILE__) . '/../config/config.ini');
 
