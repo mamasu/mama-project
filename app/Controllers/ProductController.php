@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers\Product;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -12,7 +12,7 @@ namespace App\Controllers\Product;
  *
  * @author xavier
  */
-class ProductController extends \Mmf\MVC\BasicControllerAbstract {
+class ProductController extends \Mmf\Controller\BasicControllerAbstract {
     public function testFunction($test, $foo, $var) {
         return $test.$foo.$var;
     }
@@ -26,7 +26,7 @@ class ProductController extends \Mmf\MVC\BasicControllerAbstract {
     }
 
     public function showProductBadResponse($test, $foo, $var) {
-        throw new \Mmf\MVC\ControllerException('Message of bad response '.$test);
+        throw new \Mmf\Controller\ControllerException('Message of bad response '.$test);
     }
 
 }
