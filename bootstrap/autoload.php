@@ -57,5 +57,5 @@ try {
     $error = 1;
     $errorText = $e->getTraceAsString();
     //Include the error default page in case of general errors.
-    include (__DIR__ . '/app/views/errors/error_page.html');
+    include (__DIR__ . '/../app/views/errors/error_page.html');
 }
