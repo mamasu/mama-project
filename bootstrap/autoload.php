@@ -29,7 +29,7 @@ try {
     $error = 0;
 
     //Create the autoloader with the route base of the files
-    $autoloader = new Mmf\Autoloader\Autoloader(array(), dirname(__FILE__));
+    $autoloader = new Mmf\Autoloader\Autoloader(array(), dirname(__DIR__));
 
     //Include the config path
     //$autoloader->addNewAutoloadPath('/mmf/parameter');
@@ -43,7 +43,7 @@ try {
     //Create the new FrontController and pass the autoloader
     $frontController = new Mmf\Controller\FrontController($autoloader, $config, $communication);
 
-    $config->addConfigVars(dirname(__FILE__) . '/../config/config.ini');
+    $config->addConfigVars(dirname(__DIR__) . '/config/config.ini');
 
     //Execute the Main Function
     $mainAction      = $frontController->main();
