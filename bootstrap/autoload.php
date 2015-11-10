@@ -19,7 +19,7 @@ require __DIR__ . '/../vendor/autoload.php';
 try {
     set_error_handler(function($errno, $errstr, $errfile, $errline) {
         //Change to log error in production error_log
-        throw new Exception('Error Level: '.$errno.
+        throw new \Exception('Error Level: '.$errno.
                             ' Error message: '.$errstr.
                             ' Error file: '.$errfile.
                             ' Error line: '.$errline, 1);
