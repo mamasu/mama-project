@@ -9,12 +9,6 @@
         }
     ],
     "minimum-stability": "dev",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "http://repo.mamasulabs.com/"
-        }
-    ],
     "require": {
         "php": ">=5.4.0",
         "mmf/framework": "0.0.*"
