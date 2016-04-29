@@ -1,8 +1,8 @@
 # README
 
 
-What is Mamaframework?
-------
+## What is Mamaframework?
+
 
 Mamaframework is a PHP 5.5 full-stack web framework. It is written with speed and
 flexibility in mind. It allows developers to build better and easy to maintain
@@ -11,15 +11,15 @@ websites with PHP.
 Mamaframework can be used to develop all kind of websites, from your personal blog
 to high traffic ones.
 
-Requirements
-------
+## Requirements
+
 
 Mamaframework is only supported on PHP 5.5 and up. Mamaframework 
 needs a Database to manage Access Control List. This Database must be MySQL. 
 Remmember to have the mod rewritte enable.
 
-Installation 
-------
+## Installation 
+
 ### Install composer
 
 If you don't have composer installed in your system, install it by following this
