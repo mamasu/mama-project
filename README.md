@@ -20,7 +20,7 @@ Remmember to have the mod rewritte enable.
 
 ## Installation 
 
-###1. Install composer
+### 1. Install composer
 
 If you don't have composer installed in your system, install it by following this
 
