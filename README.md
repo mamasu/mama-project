@@ -63,13 +63,13 @@ The document root need to point to public folder
 
 At this point the mamaframework may be installed
 
-Posibles mensajes de error
+Possible error messages
 -------
 
- Texto de error | Correccion
+ Error text | Possible solution
  ------------ | -------------
- ` {"success":false,"responseData":{"errorCode":1600,"errorMessage":"The URL not match with any of our defined routes"}} ` | Ir a config/routing.ini para ver las rutas disponibles
- ` {"success":false,"responseData":{"errorCode":0,"errorMessage":"Error trying to connect to db"}}`  | Ir a config/config.ini para ver si el grupo db_default esta bien configurado
+ ` {"success":false,"responseData":{"errorCode":1600,"errorMessage":"The URL not match with any of our defined routes"}} ` | Go to `config/routing.ini` to check the declared variable
+ ` {"success":false,"responseData":{"errorCode":0,"errorMessage":"Error trying to connect to db"}}`  | Go to `config/config.ini` to check if the group db_default is correctly configure
  ` {"success":false,"responseData":{"errorCode":1500,"errorMessage":"User not allow to access"}}`  | Check in the database role , permission and role_permission + config/routing.ini if the configuration is correct
 
 
