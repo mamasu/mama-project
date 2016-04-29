@@ -72,7 +72,7 @@ At this point the mamaframework may be installed
  ------------ | -------------
  ` {"success":false,"responseData":{"errorCode":1600,"errorMessage":"The URL not match with any of our defined routes"}} ` | Go to `config/routing.ini` to check the declared variable
  ` {"success":false,"responseData":{"errorCode":0,"errorMessage":"Error trying to connect to db"}}`  | Go to `config/config.ini` to check if the group db_default is correctly configure
- ` {"success":false,"responseData":{"errorCode":1500,"errorMessage":"User not allow to access"}}`  | Check in the database role , permission and role_permission + config/routing.ini if the configuration is correct
+ ` {"success":false,"responseData":{"errorCode":1500,"errorMessage":"User not allow to access"}}`  | Check in the database `role` , `permission` and `role_permission` + `config/routing.ini` if the configuration is correct
 
 
 ## Getting Started
