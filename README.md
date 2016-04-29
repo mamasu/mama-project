@@ -1,8 +1,8 @@
-README
-======
+# README
 
-What is Mamaframework?
-----------------------
+
+## What is Mamaframework?
+
 
 Mamaframework is a PHP 5.5 full-stack web framework. It is written with speed and
 flexibility in mind. It allows developers to build better and easy to maintain
@@ -11,15 +11,17 @@ websites with PHP.
 Mamaframework can be used to develop all kind of websites, from your personal blog
 to high traffic ones.
 
-Requirements
-------------
+## Requirements
+
 
 Mamaframework is only supported on PHP 5.5 and up. Mamaframework 
 needs a Database to manage Access Control List. This Database must be MySQL. 
 Remmember to have the mod rewritte enable.
 
-Install composer
--------
+## Installation 
+
+### Install composer
+
 If you don't have composer installed in your system, install it by following this
 
 ```sh
@@ -34,37 +36,37 @@ php -r "unlink('composer-setup.php');"
 mv composer.phar /usr/local/bin/composer
 ```
 
-Install project
--------
+### Install project
 
-Usage:
--------
+
+#### Usage:
+
 ```sh
 composer create-project  mmf/mmf [Directory name]
 ```
 
-Example:
--------
+#### Example:
+
 ```
 composer create-project  mmf/mmf mmf
 ```
 
 
-Install database
--------
+### Install database
+
 
 Use included database dump in project root DumpTestDB
 
 
-Configure server
--------
+### Configure apache
+
 
 The document root need to point to public folder
 
 At this point the mamaframework may be installed
 
-Possible error messages
--------
+### Possible error messages
+
 
  Error text | Possible solution
  ------------ | -------------
@@ -73,8 +75,8 @@ Possible error messages
  ` {"success":false,"responseData":{"errorCode":1500,"errorMessage":"User not allow to access"}}`  | Check in the database role , permission and role_permission + config/routing.ini if the configuration is correct
 
 
-Getting Started
----------------
+## Getting Started
+
 
 - Representation of directory structre with short description of what includes:
 <code>
@@ -101,14 +103,14 @@ Getting Started
 
 
 
-Documentation
--------------
+## Documentation
+
 
 Please read the documentation file of core functionalities, present in 
 (Google drive > Mamasú Internal > Mamaframework > Documentation > Core Functionalitites) 
 and class diagram stored in (Google drive > Mamasú Internal > Mamaframework > Documentation > class diagram > Mmframework).
 
-### Config file
+## Config file
 
 Config file is written using the .ini syntaxis. Basically is grouped by modules
 
@@ -176,13 +178,13 @@ the config file bla bla
 
 the config file bla bla
 
-Contributing
-------------
+## Contributing
+
 
 Mamaframework is a private Mamasu project. 
 
-Running Mamaframework Tests
----------------------------
+## Running Mamaframework Tests
+
 
 - Install phpunit from https://phpunit.de page.
 - Open the terminal, go to project directory and execute:  phpunit --color  tests/src/endtoend/ , 
@@ -190,5 +192,4 @@ if all goes right, a green message containing 'OK' will apearing.
 - If wrong message apears with the message 'db connection error', make sure that config.ini parameters of database are correct and server is working fine.
 
 
-FAQ
----
+## FAQ
