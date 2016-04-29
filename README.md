@@ -36,7 +36,7 @@ php -r "unlink('composer-setup.php');"
 mv composer.phar /usr/local/bin/composer
 ```
 
-### Install project
+### 2. Install project
 
 
 #### Usage:
@@ -52,13 +52,13 @@ composer create-project  mmf/mmf mmf
 ```
 
 
-### Install database
+### 3. Install database
 
 
 Use included database dump in project root DumpTestDB
 
 
-### Configure apache
+### 4. Configure apache
 
 
 The document root need to point to public folder
